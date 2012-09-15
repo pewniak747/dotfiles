@@ -17,9 +17,7 @@ cd ~/code
 set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/*,*/log/*
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
-highlight ExtraWhitespace ctermbg=red guibg=red
+highlight ExtraWhitespace ctermbg=red ctermfg=white
 match ExtraWhitespace /\s\+$/
 let g:ctrlp_custom_ignore = '\.git$\|\.bundle$'
 
