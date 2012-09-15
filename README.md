@@ -12,6 +12,7 @@ pewniak747's dotfiles
   * [vim-autoclose][vim-autoclose]
   * [vim-snipmate][vim-snipmate]
 * terminal manager: [tmux][tmux]
+  * [teamocil][teamocil]
 * search: [ack][ack]
 
 [git]: http://git-scm.com
@@ -25,4 +26,5 @@ pewniak747's dotfiles
 [vim-autoclose]: https://github.com/Townk/vim-autoclose
 [vim-snipmate]: https://github.com/garbas/vim-snipmate
 [tmux]: http://tmux.sourceforge.net
+[teamocil]: https://github.com/remiprev/teamocil
 [ack]: http://betterthangrep.com
