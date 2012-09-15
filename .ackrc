@@ -1,0 +1,6 @@
+-a
+--ignore-dir=log
+--ignore-dir=coverage
+--ignore-dir=.sass-cache
+--ignore-dir=tmp
+--color-match=yellow
