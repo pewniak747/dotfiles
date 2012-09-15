@@ -1,19 +1,33 @@
 pewniak747's dotfiles
 =====================
 
-* version control: [git][git]
-* shell: [zsh][zsh]
-  * [oh-my-zsh][oh-my-zsh]
-* editor: [vim][vim]
-  * [vundle][vundle]
-  * [ctrlp][ctrlp]
-  * [vim-surround][vim-surround]
-  * [vim-rails][vim-rails]
-  * [vim-autoclose][vim-autoclose]
-  * [vim-snipmate][vim-snipmate]
-* terminal manager: [tmux][tmux]
-  * [teamocil][teamocil]
-* search: [ack][ack]
+version control
+---------------
+* [git][git]
+
+shell
+-----
+* [zsh][zsh]
+* [oh-my-zsh][oh-my-zsh]
+
+editor
+------
+* [vim][vim]
+* [vundle][vundle]
+* [ctrlp][ctrlp]
+* [vim-surround][vim-surround]
+* [vim-rails][vim-rails]
+* [vim-autoclose][vim-autoclose]
+* [vim-snipmate][vim-snipmate]
+
+terminal manager
+----------------
+* [tmux][tmux]
+* [teamocil][teamocil]
+
+search
+------
+* [ack][ack]
 
 [git]: http://git-scm.com
 [zsh]: http://www.zsh.org
