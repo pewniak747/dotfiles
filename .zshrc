@@ -24,6 +24,9 @@ alias tmux='tmux -2'
 function tmuxn() {
   tmux new-session "teamocil $*"
 }
+function tmuxp() {
+  tmux new-session "export TMUX_PROJECT=$* && teamocil project"
+}
 
 # rbenv
 eval export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:${PATH}"
