@@ -1,0 +1,24 @@
+defaults: &defaults
+  clear: true
+  root: "~/code/<%= ENV['TMUX_PROJECT'] %>"
+  splits:
+    - ""
+
+windows:
+  - name: "server"
+    <<: *defaults
+  - name: "vim"
+    <<: *defaults
+    focus: true
+    splits:
+      - cmd: "vim -c 'cd ~/code/<%= ENV['TMUX_PROJECT'] %>'"
+  - name: "git"
+    <<: *defaults
+    splits:
+      - cmd: "git status"
+  - name: "specs"
+    <<: *defaults
+  - name: "teminal"
+    <<: *defaults
+  - name: "remote server"
+    <<: *defaults
