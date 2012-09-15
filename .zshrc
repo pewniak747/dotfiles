@@ -21,7 +21,9 @@ alias geronimo='git pull && git push'
 alias gcam='git commit -am'
 alias gvim='gvim -f'
 alias tmux='tmux -2'
-alias tmuxn='tmux new-session "teamocil netguru"'
+function tmuxn() {
+  tmux new-session "teamocil $*"
+}
 
 # rbenv
 eval export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:${PATH}"
