@@ -3,4 +3,5 @@
 --ignore-dir=coverage
 --ignore-dir=.sass-cache
 --ignore-dir=tmp
+--ignore-dir=.bundle
 --color-match=yellow
