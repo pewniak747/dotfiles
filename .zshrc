@@ -21,6 +21,7 @@ alias geronimo='git pull && git push'
 alias gcam='git commit -am'
 alias gvim='gvim -f'
 alias tmux='tmux -2'
+alias ri='ri -f ansi'
 function tmuxn() {
   tmux new-session "teamocil $*"
 }
