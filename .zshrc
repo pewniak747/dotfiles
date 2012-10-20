@@ -14,6 +14,9 @@ export PATH="$PATH:~/scripts"
 unset http_proxy
 unset https_proxy
 
+# vi-mode shell
+bindkey -v
+
 # aliases
 alias canihaz='sudo apt-get install'
 alias die='kill -9'
