@@ -29,7 +29,11 @@ function tmuxn() {
   tmux new-session "teamocil $*"
 }
 function tmuxp() {
-  tmux new-session "export TMUX_PROJECT=$* && teamocil project"
+  if [ -d $HOME/code/$* ]; then
+    tmux new-session "export TMUX_PROJECT=$* && teamocil project"
+  else
+    echo "directory ~/code/$* does not exist"
+  fi
 }
 
 # rbenv
