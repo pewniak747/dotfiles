@@ -18,7 +18,15 @@ windows:
       - cmd: "git status"
   - name: "specs"
     <<: *defaults
-  - name: "teminal"
+  - name: "shell"
     <<: *defaults
-  - name: "remote server"
+  - name: "dev log"
+    <<: *defaults
+    splits:
+      - cmd: "tail -f log/development.log"
+  - name: "ri"
+    <<: *defaults
+    splits:
+      - cmd: "ri -i"
+  - name: "remote"
     <<: *defaults
