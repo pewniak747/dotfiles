@@ -26,6 +26,8 @@ alias gcam='git commit -am'
 alias gvim='gvim -f'
 alias tmux='tmux -2'
 alias ri='ri -f ansi'
+alias be='bundle exec'
+
 function tmuxn() {
   tmux new-session "teamocil $*"
 }
