@@ -13,6 +13,7 @@ export PATH="$PATH:~/scripts"
 # env
 unset http_proxy
 unset https_proxy
+export RUBYOPT=-Ku
 
 # vi-mode shell
 bindkey -v
