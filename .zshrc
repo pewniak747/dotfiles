@@ -27,6 +27,8 @@ alias gvim='gvim -f'
 alias tmux='tmux -2'
 alias ri='ri -f ansi'
 alias be='bundle exec'
+alias ber='bundle exec rspec spec/'
+alias cukes='RAILS_ENV=cucumber bundle exec cucumber'
 
 function tmuxn() {
   tmux new-session "teamocil $*"
