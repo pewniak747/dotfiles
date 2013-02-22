@@ -5,4 +5,5 @@
 --ignore-dir=tmp
 --ignore-dir=.bundle
 --ignore-dir=app/assets/javascripts/i18n/
+--ignore-dir=public/assets
 --color-match=yellow
