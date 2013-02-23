@@ -40,5 +40,4 @@ function tmuxp() {
 }
 
 # rbenv
-export PATH="$HOME/scripts:$PATH"
 eval "$(rbenv init -)"
