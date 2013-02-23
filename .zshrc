@@ -22,13 +22,11 @@ bindkey -v
 alias canihaz='sudo apt-get install'
 alias die='kill -9'
 alias geronimo='git pull && git push'
-alias gcam='git commit -am'
-alias gvim='gvim -f'
 alias tmux='tmux -2'
 alias ri='ri -f ansi'
 alias be='bundle exec'
-alias ber='bundle exec rspec spec/'
-alias cukes='RAILS_ENV=cucumber bundle exec cucumber'
+alias ber='be rspec spec'
+alias cukes='RAILS_ENV=cucumber be cucumber'
 
 function tmuxn() {
   tmux new-session "teamocil $*"
