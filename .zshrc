@@ -19,7 +19,7 @@ export RUBYOPT=-Ku
 bindkey -v
 
 # aliases
-alias canihaz='sudo apt-get install'
+alias canihaz='brew install'
 alias die='kill -9'
 alias geronimo='git pull && git push'
 alias tmux='tmux -2'
