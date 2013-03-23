@@ -27,6 +27,7 @@ alias ri='ri -f ansi'
 alias be='bundle exec'
 alias ber='be rspec spec'
 alias cukes='RAILS_ENV=cucumber be cucumber'
+alias powr='powder restart'
 
 function tmuxn() {
   tmux new-session "teamocil $*"
