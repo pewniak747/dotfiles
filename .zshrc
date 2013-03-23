@@ -14,6 +14,8 @@ export PATH="$PATH:$HOME/scripts"
 unset http_proxy
 unset https_proxy
 export RUBYOPT=-Ku
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # vi-mode shell
 bindkey -v
