@@ -8,7 +8,7 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 # path
-export PATH="$PATH:~/scripts"
+export PATH="$PATH:$HOME/scripts"
 
 # env
 unset http_proxy

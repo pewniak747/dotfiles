@@ -49,4 +49,3 @@ Bundle "garbas/vim-snipmate"
 Bundle "mileszs/ack.vim"
 
 filetype plugin indent on
-set colorcolumn=80
