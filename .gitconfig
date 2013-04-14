@@ -40,3 +40,5 @@
   la = !git l --all
 [core]
 	excludesfile = ~/.gitignore
+[branch]
+	autosetuprebase = always
