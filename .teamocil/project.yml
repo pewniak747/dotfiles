@@ -4,29 +4,31 @@ defaults: &defaults
   splits:
     - ""
 
-windows:
-  - name: "server"
-    <<: *defaults
-  - name: "vim"
-    <<: *defaults
-    focus: true
-    splits:
-      - cmd: "vim -c 'cd ~/code/<%= ENV['TMUX_PROJECT'] %>'"
-  - name: "git"
-    <<: *defaults
-    splits:
-      - cmd: "git status"
-  - name: "specs"
-    <<: *defaults
-  - name: "shell"
-    <<: *defaults
-  - name: "dev log"
-    <<: *defaults
-    splits:
-      - cmd: "tail -f log/development.log"
-  - name: "ri"
-    <<: *defaults
-    splits:
-      - cmd: "ri -i"
-  - name: "remote"
-    <<: *defaults
+session:
+  name: "<%= ENV['TMUX_PROJECT'] %>"
+  windows:
+    - name: "server"
+      <<: *defaults
+    - name: "vim"
+      <<: *defaults
+      focus: true
+      splits:
+        - cmd: "vim -c 'cd ~/code/<%= ENV['TMUX_PROJECT'] %>'"
+    - name: "git"
+      <<: *defaults
+      splits:
+        - cmd: "git status"
+    - name: "specs"
+      <<: *defaults
+    - name: "shell"
+      <<: *defaults
+    - name: "dev log"
+      <<: *defaults
+      splits:
+        - cmd: "tail -f log/development.log"
+    - name: "ri"
+      <<: *defaults
+      splits:
+        - cmd: "ri -i"
+    - name: "remote"
+      <<: *defaults
