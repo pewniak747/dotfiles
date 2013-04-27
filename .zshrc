@@ -36,7 +36,12 @@ function tmuxn() {
 }
 function tmuxp() {
   if [ -d $HOME/code/$* ]; then
-    tmux new-session "export TMUX_PROJECT=$* && teamocil project"
+    tmux list-sessions | grep $* > /dev/null 2>&1
+    if [ $? = 0 ]; then
+      tmux attach-session -t $*
+    else
+      tmux new-session "export TMUX_PROJECT=$* && teamocil project"
+    fi
   else
     echo "directory ~/code/$* does not exist"
   fi
