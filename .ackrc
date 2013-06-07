@@ -6,4 +6,6 @@
 --ignore-dir=.bundle
 --ignore-dir=app/assets/javascripts/i18n/
 --ignore-dir=public/assets
+--ignore-dir=public/images
+--ignore-dir=target
 --color-match=yellow
