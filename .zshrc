@@ -30,6 +30,7 @@ alias be='bundle exec'
 alias ber='be rspec spec'
 alias cukes='RAILS_ENV=cucumber be cucumber'
 alias powr='powder restart'
+alias h='heroku'
 
 function tmuxn() {
   tmux new-session "teamocil $*"
