@@ -30,6 +30,7 @@ alias ber='be rspec spec'
 alias cukes='RAILS_ENV=cucumber be cucumber'
 alias powr='powder restart'
 alias h='heroku'
+alias ctags="`brew --prefix`/bin/ctags"
 
 function tmuxn() {
   tmux new-session "teamocil $*"
