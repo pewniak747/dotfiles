@@ -18,7 +18,7 @@ set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/*,*/log/*
 highlight ExtraWhitespace ctermbg=red ctermfg=white
-match ExtraWhitespace /\s\+$/
+match ExtraWhitespace /\s\+$\| \+\ze\t/
 let g:ctrlp_custom_ignore = '\.git$\|\.bundle$|public/images$|target$'
 
 " From vimrc_example.vim distributed with Vim 7.
