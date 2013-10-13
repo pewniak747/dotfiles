@@ -1,6 +1,6 @@
 # oh-my-zsh
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="afowler"
+ZSH_THEME="pewniak747"
 DISABLE_AUTO_TITLE="true"
 plugins=(git)
 
@@ -18,6 +18,7 @@ export LANG=en_US.UTF-8
 
 # vi-mode shell
 bindkey -v
+export KEYTIMEOUT=1
 
 # aliases
 alias canihaz='brew install'
