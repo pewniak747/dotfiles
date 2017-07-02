@@ -1,11 +1,14 @@
--a
 --ignore-dir=log
 --ignore-dir=coverage
 --ignore-dir=.sass-cache
 --ignore-dir=tmp
+--ignore-dir=doc
 --ignore-dir=.bundle
 --ignore-dir=app/assets/javascripts/i18n/
 --ignore-dir=public/assets
 --ignore-dir=public/images
 --ignore-dir=target
+--ignore-dir=build
 --color-match=yellow
+--ignore-file=is:react_bundle.css
+--ignore-file=is:react_bundle.js
