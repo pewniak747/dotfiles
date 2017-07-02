@@ -40,7 +40,11 @@
   la = !git l --all
 [core]
 	excludesfile = ~/.gitignore
-[branch]
-	autosetuprebase = always
+#[branch]
+#	autosetuprebase = always
 [push]
 	default = matching
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
