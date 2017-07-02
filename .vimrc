@@ -19,7 +19,10 @@ set directory=~/.vim/tmp
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/*,*/log/*
 highlight ExtraWhitespace ctermbg=red ctermfg=white
 match ExtraWhitespace /\s\+$\| \+\ze\t/
-let g:ctrlp_custom_ignore = '\.git$\|\.bundle$|public/images$|target$'
+let g:ctrlp_custom_ignore = '\.git$\|\.bundle$\|public\/images$\|target$\|node_modules$\|coverage$\|uploads$'
+let g:ctrlp_max_files=0
+set list
+set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
 " From vimrc_example.vim distributed with Vim 7.
 " When editing a file, always jump to the last known cursor position.
@@ -30,22 +33,30 @@ autocmd BufReadPost *
   \   exe "normal! g`\"" |
   \ endif
 
+let g:ack_default_options =
+      \ " -s -H --nocolor --nogroup --smart-case --follow"
+
 " vundle
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-surround'
-Bundle 'Townk/vim-autoclose'
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "honza/snipmate-snippets"
-Bundle "garbas/vim-snipmate"
-Bundle "mileszs/ack.vim"
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-surround'
+Plugin 'Townk/vim-autoclose'
+Plugin 'git://github.com/mileszs/ack.vim.git'
+Plugin 'mxw/vim-jsx'
+Plugin 'kewah/vim-stylefmt'
+Plugin 'chrisbra/Colorizer'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'junegunn/goyo.vim'
 
+call vundle#end()
+filetype off
 filetype plugin indent on
+
+let g:colorizer_auto_filetype='css,html'

@@ -13,22 +13,20 @@ session:
       <<: *defaults
       focus: true
       splits:
-        - cmd: "vim -c 'cd ~/code/<%= ENV['TMUX_PROJECT'] %>'"
+        - cmd: "nvim -c 'cd ~/code/<%= ENV['TMUX_PROJECT'] %>'"
     - name: "git"
       <<: *defaults
       splits:
         - cmd: "git status"
-    - name: "specs"
+    - name: "test"
       <<: *defaults
-    - name: "shell"
+    - name: "shell 1"
+      <<: *defaults
+    - name: "shell 2"
       <<: *defaults
     - name: "dev log"
       <<: *defaults
       splits:
         - cmd: "tail -f log/development.log"
-    - name: "ri"
-      <<: *defaults
-      splits:
-        - cmd: "ri -i"
-    - name: "remote"
+    - name: "ssh"
       <<: *defaults
