@@ -1,4 +1,3 @@
-colorscheme molokai
 set nu
 syntax on
 filetype plugin on
@@ -54,9 +53,11 @@ Plugin 'kewah/vim-stylefmt'
 Plugin 'chrisbra/Colorizer'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'junegunn/goyo.vim'
+Plugin 'flazz/vim-colorschemes'
 
 call vundle#end()
 filetype off
 filetype plugin indent on
 
 let g:colorizer_auto_filetype='css,html'
+colorscheme molokai
