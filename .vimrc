@@ -60,4 +60,5 @@ filetype off
 filetype plugin indent on
 
 let g:colorizer_auto_filetype='css,html'
+let g:jsx_ext_required = 0
 colorscheme molokai
