@@ -54,6 +54,7 @@ Plugin 'chrisbra/Colorizer'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'junegunn/goyo.vim'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'prettier/vim-prettier'
 
 call vundle#end()
 filetype off
@@ -61,4 +62,21 @@ filetype plugin indent on
 
 let g:colorizer_auto_filetype='css,html'
 let g:jsx_ext_required = 0
+
+" max line lengh that prettier will wrap on
+let g:prettier#config#print_width = 80
+" number of spaces per indentation level
+let g:prettier#config#tab_width = 2
+" use tabs over spaces
+let g:prettier#config#use_tabs = 'false'
+" print semicolons
+let g:prettier#config#semi = 'true'
+" single quotes over double quotes
+let g:prettier#config#single_quote = 'false'
+" print spaces between brackets
+let g:prettier#config#bracket_spacing = 'true'
+" put > on the last line instead of new line
+let g:prettier#config#jsx_bracket_same_line = 'false'
+let g:prettier#config#trailing_comma = 'none'
+let g:prettier#config#parser = 'flow'
 colorscheme molokai
