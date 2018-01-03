@@ -12,3 +12,5 @@
 --color-match=yellow
 --ignore-file=is:react_bundle.css
 --ignore-file=is:react_bundle.js
+--ignore-file=is:.eslintcache
+--ignore-file=is:.stylelintcache
