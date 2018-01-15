@@ -9,6 +9,10 @@ session:
   windows:
     - name: "server"
       <<: *defaults
+    - name: "tests"
+      <<: *defaults
+    - name: "linter"
+      <<: *defaults
     - name: "vim"
       <<: *defaults
       focus: true
@@ -18,15 +22,9 @@ session:
       <<: *defaults
       splits:
         - cmd: "git status"
-    - name: "test"
-      <<: *defaults
     - name: "shell 1"
       <<: *defaults
     - name: "shell 2"
       <<: *defaults
-    - name: "dev log"
-      <<: *defaults
-      splits:
-        - cmd: "tail -f log/development.log"
-    - name: "ssh"
+    - name: "watch"
       <<: *defaults
