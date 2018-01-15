@@ -55,6 +55,7 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'junegunn/goyo.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'prettier/vim-prettier'
+Plugin 'reasonml-editor/vim-reason-plus'
 
 call vundle#end()
 filetype off
