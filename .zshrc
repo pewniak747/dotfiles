@@ -59,3 +59,6 @@ eval "$(rbenv init -)"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"
+
+export PATH="/Users/tomasz/miniconda2/bin:$PATH"
+export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
