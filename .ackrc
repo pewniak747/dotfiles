@@ -9,8 +9,10 @@
 --ignore-dir=public/images
 --ignore-dir=target
 --ignore-dir=build
+--ignore-dir=lib/bs
 --color-match=yellow
 --ignore-file=is:react_bundle.css
 --ignore-file=is:react_bundle.js
 --ignore-file=is:.eslintcache
 --ignore-file=is:.stylelintcache
+--ignore-file=match:/[.-]bs[.]js$/

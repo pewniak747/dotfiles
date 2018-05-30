@@ -18,7 +18,7 @@ set directory=~/.vim/tmp
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/*,*/log/*
 highlight ExtraWhitespace ctermbg=red ctermfg=white
 match ExtraWhitespace /\s\+$\| \+\ze\t/
-let g:ctrlp_custom_ignore = '\.git$\|\.bundle$\|public\/images$\|target$\|node_modules$\|coverage$\|uploads$'
+let g:ctrlp_custom_ignore = '\.git$\|\.bundle$\|public\/images$\|target$\|node_modules$\|coverage$\|uploads$\|lib\/bs$'
 let g:ctrlp_max_files=0
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
@@ -60,6 +60,8 @@ Plugin 'reasonml-editor/vim-reason-plus'
 call vundle#end()
 filetype off
 filetype plugin indent on
+
+nmap <Leader>r :%!$(PWD)/node_modules/bs-platform/lib/refmt.exe<CR>
 
 let g:colorizer_auto_filetype='css,html'
 let g:jsx_ext_required = 0
