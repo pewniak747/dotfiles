@@ -61,7 +61,7 @@ call vundle#end()
 filetype off
 filetype plugin indent on
 
-nmap <Leader>r :%!$(PWD)/node_modules/bs-platform/lib/refmt.exe<CR>
+nmap <Leader>r mq:%!$(PWD)/node_modules/bs-platform/lib/refmt.exe<CR>`q
 
 let g:colorizer_auto_filetype='css,html'
 let g:jsx_ext_required = 0
