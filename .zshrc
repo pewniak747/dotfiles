@@ -65,3 +65,5 @@ eval `opam config env`
 
 export PATH="/Users/tomasz/miniconda2/bin:$PATH"
 export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
+export PATH="/usr/local/opt/node@8/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"
