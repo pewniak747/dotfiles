@@ -3,6 +3,7 @@
 [user]
 	name = Tomasz Pewiński
 	email = pewniak747@gmail.com
+	signingkey = A10468DBF063F523
 [alias]
   st = status
   ci = commit
@@ -48,3 +49,5 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[commit]
+	gpgsign = true
