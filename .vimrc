@@ -8,6 +8,9 @@ set autoindent
 set expandtab
 set go-=T
 set noeb vb t_vb=
+" set foldmethod=syntax
+" set foldcolumn=1
+" set foldlevelstart=99
 set t_Co=256
 map <F8> :!rspec %<Enter>
 map <F9> :!sh .rspec-suite<Enter>
@@ -55,6 +58,8 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'junegunn/goyo.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'prettier/vim-prettier'
+Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plugin 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 Plugin 'reasonml-editor/vim-reason-plus'
 
 call vundle#end()
@@ -62,6 +67,12 @@ filetype off
 filetype plugin indent on
 
 nmap <Leader>r mq:%!$(PWD)/node_modules/bs-platform/lib/refmt.exe<CR>`q
+
+let g:LanguageClient_serverCommands = {
+  \ 'reason': ['/Users/tomasz/scripts/reason-language-server.exe']
+  \ }
+let g:LanguageClient_autoStart = 1
+let g:deoplete#enable_at_startup = 1
 
 let g:colorizer_auto_filetype='css,html'
 let g:jsx_ext_required = 0
